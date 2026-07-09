@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel - Atelier Maison</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body style="font-family: 'Inter', sans-serif; background: #f7f2ea; color: #2f241d;">
+    <div class="d-flex min-vh-100">
+      <aside class="d-none d-lg-flex flex-column bg-dark text-white p-4" style="width: 280px;">
+        <a href="home.html" class="text-white text-decoration-none mb-4 fs-4 fw-semibold" style="font-family: 'Cormorant Garamond', serif;">Atelier Maison</a>
+        <div class="mb-4">
+          <p class="text-uppercase small text-muted mb-2">Dashboard</p>
+          <h5 class="mb-0">Admin Control</h5>
+        </div>
+        <nav class="nav flex-column gap-2">
+          <a href="#overview" class="nav-link rounded-3 text-white bg-white bg-opacity-10">Overview</a>
+          <a href="#products" class="nav-link rounded-3 text-white">Products</a>
+          <a href="#orders" class="nav-link rounded-3 text-white">Orders</a>
+          <a href="#customers" class="nav-link rounded-3 text-white">Customers</a>
+          <a href="#reports" class="nav-link rounded-3 text-white">Reports</a>
+          <a href="shop.html" class="nav-link rounded-3 text-white">View Shop</a>
+        </nav>
+        <div class="mt-auto pt-4 border-top border-white border-opacity-10">
+          <p class="small text-white-50 mb-1">Admin</p>
+          <div class="d-flex align-items-center gap-3">
+            <span class="rounded-circle bg-secondary-subtle text-dark d-inline-flex align-items-center justify-content-center" style="width: 42px; height: 42px;">A</span>
+            <div>
+              <p class="mb-0 fw-semibold">A. Sharma</p>
+              <p class="small text-white-50 mb-0">Store manager</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <div class="flex-grow-1">
+        <header class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-85 px-4 py-3">
+          <div class="container-fluid">
+            <a class="navbar-brand d-lg-none" href="home.html" style="font-family: 'Cormorant Garamond', serif;">Atelier Maison</a>
+            <div class="d-flex align-items-center gap-3">
+              <button class="btn btn-outline-light d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#adminSideNav"><i class="bi bi-list"></i></button>
+              <div>
+                <p class="text-white-50 mb-0 small">Welcome back,</p>
+                <h5 class="mb-0">Admin Dashboard</h5>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <button class="btn btn-outline-light btn-sm rounded-pill"><i class="bi bi-bell"></i></button>
+              <button class="btn btn-outline-light btn-sm rounded-pill"><i class="bi bi-gear"></i></button>
+              <a href="home.html" class="btn btn-light btn-sm rounded-pill">Back to site</a>
+            </div>
+          </div>
+        </header>
+
+        <main class="container-fluid py-5">
+          <section id="overview" class="mb-5">
+            <div class="row g-4">
+              <div class="col-12 col-xl-4">
+                <div class="card rounded-4 shadow-sm border-0 h-100 p-4">
+                  <div class="d-flex justify-content-between align-items-start mb-3">
+                    <div>
+                      <p class="text-uppercase small text-muted mb-2">Total Sales</p>
+                      <h3 class="fw-bold">$48.7K</h3>
+                    </div>
+                    <span class="badge bg-success rounded-pill">+12%</span>
+                  </div>
+                  <p class="text-muted mb-0">This week performance is stronger compared to the previous week, driven by high-end collections.</p>
+                </div>
+              </div>
+              <div class="col-12 col-xl-4">
+                <div class="card rounded-4 shadow-sm border-0 h-100 p-4">
+                  <div class="d-flex justify-content-between align-items-start mb-3">
+                    <div>
+                      <p class="text-uppercase small text-muted mb-2">New Orders</p>
+                      <h3 class="fw-bold">82</h3>
+                    </div>
+                    <span class="badge bg-warning-subtle text-dark rounded-pill">+8%</span>
+                  </div>
+                  <p class="text-muted mb-0">Orders from premium clients continue to grow, especially in luxury seating and storage.</p>
+                </div>
+              </div>
+              <div class="col-12 col-xl-4">
+                <div class="card rounded-4 shadow-sm border-0 h-100 p-4">
+                  <div class="d-flex justify-content-between align-items-start mb-3">
+                    <div>
+                      <p class="text-uppercase small text-muted mb-2">Available Products</p>
+                      <h3 class="fw-bold">146</h3>
+                    </div>
+                    <span class="badge bg-primary rounded-pill">Stable</span>
+                  </div>
+                  <p class="text-muted mb-0">Inventory tracking is up to date. Focus on renewing the premium console and dining collections.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="products" class="mb-5">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-4 gap-3">
+              <div>
+                <p class="text-uppercase small text-muted mb-2">Product catalogue</p>
+                <h2 class="fw-bold" style="font-family: 'Cormorant Garamond', serif;">Top selling items</h2>
+              </div>
+              <button class="btn btn-dark rounded-pill px-4">Add new product</button>
+            </div>
+            <div class="table-responsive rounded-4 shadow-sm overflow-hidden">
+              <table class="table align-middle mb-0 bg-white">
+                <thead class="table-light">
+                  <tr>
+                    <th>Product</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Status</th>
+                    <th>Stock</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Velvet Lounge Sofa</td>
+                    <td>Sofas</td>
+                    <td>$2,400</td>
+                    <td><span class="badge bg-success">Live</span></td>
+                    <td>12</td>
+                    <td><a href="#" class="text-decoration-none">Edit</a></td>
+                  </tr>
+                  <tr>
+                    <td>Oak Accent Chair</td>
+                    <td>Chairs</td>
+                    <td>$980</td>
+                    <td><span class="badge bg-success">Live</span></td>
+                    <td>18</td>
+                    <td><a href="#" class="text-decoration-none">Edit</a></td>
+                  </tr>
+                  <tr>
+                    <td>Marble Side Table</td>
+                    <td>Tables</td>
+                    <td>$1,650</td>
+                    <td><span class="badge bg-success">Live</span></td>
+                    <td>7</td>
+                    <td><a href="#" class="text-decoration-none">Edit</a></td>
+                  </tr>
+                  <tr>
+                    <td>Walnut Storage Cabinet</td>
+                    <td>Storage</td>
+                    <td>$3,200</td>
+                    <td><span class="badge bg-secondary">Draft</span></td>
+                    <td>4</td>
+                    <td><a href="#" class="text-decoration-none">Edit</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section id="orders" class="row g-4">
+            <div class="col-lg-6">
+              <div class="card rounded-4 shadow-sm border-0 p-4 h-100">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div>
+                    <p class="text-uppercase small text-muted mb-2">Latest orders</p>
+                    <h5 class="fw-bold mb-0">Recent sales</h5>
+                  </div>
+                  <span class="badge bg-info text-dark rounded-pill">Today</span>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item px-0 py-3 d-flex justify-content-between align-items-center">
+                    <div>
+                      <h6 class="mb-1">Order #1024</h6>
+                      <p class="mb-0 text-muted small">Velvet Lounge Sofa</p>
+                    </div>
+                    <span class="text-success fw-semibold">$2,400</span>
+                  </li>
+                  <li class="list-group-item px-0 py-3 d-flex justify-content-between align-items-center">
+                    <div>
+                      <h6 class="mb-1">Order #1023</h6>
+                      <p class="mb-0 text-muted small">Oak Accent Chair</p>
+                    </div>
+                    <span class="text-success fw-semibold">$980</span>
+                  </li>
+                  <li class="list-group-item px-0 py-3 d-flex justify-content-between align-items-center">
+                    <div>
+                      <h6 class="mb-1">Order #1022</h6>
+                      <p class="mb-0 text-muted small">Marble Side Table</p>
+                    </div>
+                    <span class="text-success fw-semibold">$1,650</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card rounded-4 shadow-sm border-0 p-4 h-100">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div>
+                    <p class="text-uppercase small text-muted mb-2">Customer insights</p>
+                    <h5 class="fw-bold mb-0">Active members</h5>
+                  </div>
+                  <span class="badge bg-warning-subtle text-dark rounded-pill">8 new</span>
+                </div>
+                <div class="row g-3">
+                  <div class="col-6">
+                    <div class="border rounded-4 p-3 h-100">
+                      <p class="text-uppercase small text-muted mb-2">New clients</p>
+                      <h4 class="fw-bold mb-0">24</h4>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="border rounded-4 p-3 h-100">
+                      <p class="text-uppercase small text-muted mb-2">Returning</p>
+                      <h4 class="fw-bold mb-0">58</h4>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="border rounded-4 p-3 h-100">
+                      <p class="text-uppercase small text-muted mb-2">Ratings</p>
+                      <h4 class="fw-bold mb-0">4.9/5</h4>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="border rounded-4 p-3 h-100">
+                      <p class="text-uppercase small text-muted mb-2">Revenue goal</p>
+                      <h4 class="fw-bold mb-0">$56K</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
